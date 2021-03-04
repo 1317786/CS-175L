@@ -1,11 +1,23 @@
+
 /**
    A bank account has a balance and a mechanism for
    applying interest or fees at the end of the month.
 */
 public class BankAccount
 {
+	
+	public String interestPct; 
+	
    private double balance;
+   
+   
+   private double interest;
 
+   
+   public void interest(double interestPct);
+   {
+	   balance = balance * interestPct;
+   }
    /**
       Constructs a bank account with zero balance.
  * @param startBal 
