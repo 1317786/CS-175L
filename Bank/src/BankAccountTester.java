@@ -26,6 +26,7 @@ public class BankAccountTester {
 		BankAccount myBankAccount = new BankAccount(startBal);
 		myBankAccount.withdraw(withDrawAmount);
 		myBankAccount.deposit(depositAmount);
+		myBankAccount.interest(interestPct);
 		System.out.println("Your total balance now is: " + myBankAccount.getBalance());
 		
 	}
